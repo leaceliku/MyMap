@@ -1,0 +1,27 @@
+<LinearLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:xmnls="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:text="MOVE TO HISTORY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_history" />
+
+    <TextView
+        android:text="INFORMATION"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:id="@+id/text_info" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="387dp"
+        android:layout_height="415dp"
+        xmnls:context="com.example.pcadministrator.mymap.MapsActivity" />
+
+</LinearLayout>
